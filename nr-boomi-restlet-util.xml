@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension xmlns="https://newrelic.com/docs/java/xsd/v1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="newrelic-extension extension.xsd" name="nr-boomi-restlet-util" version="1.0" enabled="true">
+  <instrumentation>
+    <pointcut transactionStartPoint="true">
+      <nameTransaction/>
+      <className>com.noelios.restlet.http.HttpClientCall</className>
+      <method>
+        <name>sendRequest</name>
+        <parameters>
+          <type>org.restlet.data.Request</type>
+        </parameters>
+      </method>
+    </pointcut>
+    <pointcut>
+      <className>com.noelios.restlet.ext.net.HttpUrlConnectionCall</className>
+      <method>
+        <name>sendRequest</name>
+        <parameters>
+          <type>org.restlet.data.Request</type>
+        </parameters>
+      </method>
+    </pointcut>
+  </instrumentation>
+</extension>
