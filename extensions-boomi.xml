@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- anthony.rabiaza@gmail.com -->
 <extension xmlns="https://newrelic.com/docs/java/xsd/v1.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="newrelic-extension extension.xsd " name="extension-boomi"
