@@ -58,12 +58,5 @@
         </parameters>
       </method>
     </pointcut>
-    <pointcut>
-      <className>com.boomi.container.cloudlet.execution.ClusterWorkerCoordinator$1</className>
-      <method>
-        <name>run</name>
-        <parameters/>
-      </method>
-    </pointcut>
   </instrumentation>
 </extension>

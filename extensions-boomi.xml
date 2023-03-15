@@ -5,13 +5,6 @@
 	version="1.0" enabled="true">
 	<instrumentation>
 
-		<!--Entry Point for all Executions-->
-		<pointcut transactionStartPoint="true">
-			<className>com.boomi.execution.ExecutionTask</className>
-			<method>
-				<name>call</name>
-			</method>
-		</pointcut>
 		<!--Removing StatusServlet Trace which is appering every second-->
 		<pointcut transactionStartPoint="false" excludeFromTransactionTrace="true" ignoreTransaction="true">
 			<nameTransaction />
