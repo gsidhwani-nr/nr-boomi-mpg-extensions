@@ -1,7 +1,6 @@
 # nr-boomi-mpg-extensions
 # 1.5 Interim Draft
-Handled Security issues and added Executors Instrumentation and optimized the xml for reporting many log running methods.
-This will have optimized instrumentaion from last revsion.
+Handled Security issues and added Executors Instrumentation and optimized the xml for reporting many log running methods. This will have optimized instrumentation from the last revision.
 
 
 ## Step to Deploy.
