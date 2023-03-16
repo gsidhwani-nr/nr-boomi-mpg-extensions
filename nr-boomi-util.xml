@@ -2,14 +2,6 @@
 <extension xmlns="https://newrelic.com/docs/java/xsd/v1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="newrelic-extension extension.xsd" name="nr-boomi-util" version="1.0" enabled="true">
   <instrumentation>
-    <pointcut transactionStartPoint="true">
-      <nameTransaction/>
-      <className>com.boomi.util.concurrent.CancellableFutureTask</className>
-      <method>
-        <name>run</name>
-        <parameters/>
-      </method>
-    </pointcut>
     <pointcut>
       <className>com.boomi.util.ProgramExecUtility</className>
       <method>

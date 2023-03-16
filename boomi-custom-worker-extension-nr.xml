@@ -3,110 +3,6 @@
   <instrumentation>
     <pointcut transactionStartPoint="true">
       <nameTransaction/>
-      <className>com.boomi.util.ExecutorUtil$CCLRunnable</className>
-      <method>
-        <name>run</name>
-        <parameters/>
-      </method>
-    </pointcut>
-    <pointcut transactionStartPoint="true">
-      <nameTransaction/>
-      <className>com.boomi.util.ExecutorUtil$NamedRunnable</className>
-      <method>
-        <name>run</name>
-        <parameters/>
-      </method>
-    </pointcut>
-    <pointcut transactionStartPoint="true">
-      <nameTransaction/>
-      <className>com.boomi.process.util.ProcessSummaryReportingService$2</className>
-      <method>
-        <name>run</name>
-        <parameters/>
-      </method>
-    </pointcut>
-    <pointcut transactionStartPoint="true">
-      <nameTransaction/>
-      <className>com.boomi.process.util.ProcessSummaryReportingService</className>
-      <method>
-        <name>access$000</name>
-        <parameters>
-          <type>com.boomi.process.util.ProcessSummaryReportingService</type>
-        </parameters>
-      </method>
-    </pointcut>
-    <pointcut transactionStartPoint="true">
-      <nameTransaction/>
-      <className>com.boomi.process.util.ProcessSummaryReportingService</className>
-      <method>
-        <name>consumePendingResults</name>
-        <parameters/>
-      </method>
-    </pointcut>
-    <pointcut transactionStartPoint="true">
-      <nameTransaction/>
-      <className>com.boomi.execution.ExecutionQueue$1</className>
-      <method>
-        <name>run</name>
-        <parameters/>
-      </method>
-    </pointcut>
-    <pointcut transactionStartPoint="true">
-      <nameTransaction/>
-      <className>com.boomi.execution.ExecutionQueue</className>
-      <method>
-        <name>access$000</name>
-        <parameters>
-          <type>com.boomi.execution.ExecutionQueue</type>
-        </parameters>
-      </method>
-    </pointcut>
-    <pointcut transactionStartPoint="true">
-      <nameTransaction/>
-      <className>com.boomi.execution.ExecutionQueue</className>
-      <method>
-        <name>manageQueuedTasks</name>
-        <parameters/>
-      </method>
-    </pointcut>
-    <pointcut transactionStartPoint="true">
-      <nameTransaction/>
-      <className>com.boomi.execution.ExecutionTask</className>
-      <method>
-        <name>call</name>
-        <parameters/>
-      </method>
-    </pointcut>
-    <pointcut transactionStartPoint="true">
-      <nameTransaction/>
-      <className>com.boomi.util.InternedObjectManager$1</className>
-      <method>
-        <name>run</name>
-        <parameters/>
-      </method>
-    </pointcut>
-    <pointcut transactionStartPoint="true">
-      <nameTransaction/>
-      <className>com.boomi.launcher.Launcher</className>
-      <method>
-        <name>main</name>
-        <parameters>
-          <type>java.lang.String[]</type>
-        </parameters>
-      </method>
-    </pointcut>
-    <pointcut transactionStartPoint="true">
-      <nameTransaction/>
-      <className>com.boomi.execution.forker.ProcessExecutionWorker</className>
-      <method>
-        <name>main</name>
-        <parameters>
-          <type>java.lang.String[]</type>
-        </parameters>
-      </method>
-    </pointcut>
-    <pointcut transactionStartPoint="true">
-      <nameTransaction/>
       <className>com.boomi.execution.forker.BaseProcessExecutionRunner</className>
       <method>
         <name>execute</name>
@@ -121,65 +17,6 @@
       <method>
         <name>executeImpl</name>
         <parameters/>
-      </method>
-    </pointcut>
-    <pointcut transactionStartPoint="true">
-      <nameTransaction/>
-      <className>com.boomi.process.graph.ProcessGraph</className>
-      <method>
-        <name>execute</name>
-        <parameters/>
-      </method>
-    </pointcut>
-    <pointcut transactionStartPoint="true">
-      <nameTransaction/>
-      <className>com.boomi.process.graph.ProcessGraph</className>
-      <method>
-        <name>executeNextShapes</name>
-        <parameters>
-          <type>com.boomi.process.graph.ProcessShape</type>
-          <type>boolean</type>
-          <type>boolean</type>
-          <type>com.boomi.store.ReadStore</type>
-        </parameters>
-      </method>
-    </pointcut>
-    <pointcut transactionStartPoint="true">
-      <nameTransaction/>
-      <className>com.boomi.process.shape.StartShape</className>
-      <method>
-        <name>execute</name>
-        <parameters>
-          <type>com.boomi.store.ReadStore</type>
-        </parameters>
-      </method>
-    </pointcut>
-    <pointcut transactionStartPoint="true">
-      <nameTransaction/>
-      <className>com.boomi.execution.ExecutionRecord</className>
-      <method>
-        <name>setEndTime</name>
-        <parameters>
-          <type>long</type>
-        </parameters>
-      </method>
-    </pointcut>
-    <pointcut transactionStartPoint="true">
-      <nameTransaction/>
-      <className>com.boomi.execution.ExecutionTask</className>
-      <method>
-        <name>close</name>
-        <parameters/>
-      </method>
-    </pointcut>
-    <pointcut transactionStartPoint="true">
-      <nameTransaction/>
-      <className>com.boomi.execution.forker.BaseProcessExecutionWorker</className>
-      <method>
-        <name>sendHeartbeat</name>
-        <parameters>
-          <type>com.boomi.execution.forker.ForkerClient</type>
-        </parameters>
       </method>
     </pointcut>
     <pointcut transactionStartPoint="true">
@@ -259,32 +96,6 @@
     </pointcut>
     <pointcut transactionStartPoint="true">
       <nameTransaction/>
-      <className>com.boomi.logging.AsyncHandler$3</className>
-      <method>
-        <name>run</name>
-        <parameters/>
-      </method>
-    </pointcut>
-    <pointcut transactionStartPoint="true">
-      <nameTransaction/>
-      <className>com.boomi.logging.AsyncHandler</className>
-      <method>
-        <name>access$200</name>
-        <parameters>
-          <type>com.boomi.logging.AsyncHandler</type>
-        </parameters>
-      </method>
-    </pointcut>
-    <pointcut transactionStartPoint="true">
-      <nameTransaction/>
-      <className>com.boomi.logging.AsyncHandler</className>
-      <method>
-        <name>publishAsync</name>
-        <parameters/>
-      </method>
-    </pointcut>
-    <pointcut transactionStartPoint="true">
-      <nameTransaction/>
       <className>com.boomi.execution.forker.RemoteWorker</className>
       <method>
         <name>executeDirect</name>
@@ -300,54 +111,6 @@
       <method>
         <name>get</name>
         <parameters/>
-      </method>
-    </pointcut>
-    <pointcut transactionStartPoint="true">
-      <nameTransaction/>
-      <className>com.boomi.util.management.CustomMBean</className>
-      <method>
-        <name>invoke</name>
-        <parameters>
-          <type>java.lang.String</type>
-          <type>java.lang.Object[]</type>
-          <type>java.lang.String[]</type>
-        </parameters>
-      </method>
-    </pointcut>
-    <pointcut transactionStartPoint="true">
-      <nameTransaction/>
-      <className>com.boomi.process.shape.MapShape</className>
-      <method>
-        <name>execute</name>
-        <parameters>
-          <type>com.boomi.store.ReadStore</type>
-        </parameters>
-      </method>
-    </pointcut>
-    <pointcut transactionStartPoint="true">
-      <nameTransaction/>
-      <className>com.boomi.dataparser.xml.XMLDataParser</className>
-      <method>
-        <name>doWrite</name>
-        <parameters>
-          <type>com.boomi.transform.data.DataNode</type>
-          <type>com.boomi.store.WriteStore</type>
-          <type>java.util.Collection</type>
-          <type>com.boomi.dataparser.ValidationHandler</type>
-        </parameters>
-      </method>
-    </pointcut>
-    <pointcut transactionStartPoint="true">
-      <nameTransaction/>
-      <className>com.boomi.dataparser.xml.XMLStreamFormatter</className>
-      <method>
-        <name>doWrite</name>
-        <parameters>
-          <type>com.boomi.transform.data.DataNode</type>
-          <type>com.boomi.store.WriteStore</type>
-          <type>java.util.Collection</type>
-          <type>com.boomi.dataparser.ValidationHandler</type>
-        </parameters>
       </method>
     </pointcut>
     <pointcut transactionStartPoint="true">
@@ -369,84 +132,6 @@
         <parameters>
           <type>com.boomi.connector.api.Payload</type>
           <type>java.util.Collection</type>
-        </parameters>
-      </method>
-    </pointcut>
-    <pointcut transactionStartPoint="true">
-      <nameTransaction/>
-      <className>com.boomi.process.logging.ProcessLogger</className>
-      <method>
-        <name>log</name>
-        <parameters>
-          <type>java.util.logging.LogRecord</type>
-        </parameters>
-      </method>
-    </pointcut>
-    <pointcut transactionStartPoint="true">
-      <nameTransaction/>
-      <className>com.boomi.process.logging.ProcessLogger</className>
-      <method>
-        <name>log</name>
-        <parameters>
-          <type>java.util.logging.LogRecord</type>
-          <type>java.lang.String</type>
-        </parameters>
-      </method>
-    </pointcut>
-    <pointcut transactionStartPoint="true">
-      <nameTransaction/>
-      <className>com.boomi.execution.ExecutionLogger</className>
-      <method>
-        <name>log</name>
-        <parameters>
-          <type>java.util.logging.LogRecord</type>
-        </parameters>
-      </method>
-    </pointcut>
-    <pointcut transactionStartPoint="true">
-      <nameTransaction/>
-      <className>com.boomi.process.graph.ProcessGraph</className>
-      <method>
-        <name>loadGraph</name>
-        <parameters>
-          <type>java.lang.String</type>
-          <type>com.boomi.model.process.Process</type>
-          <type>java.lang.String</type>
-          <type>java.lang.String</type>
-        </parameters>
-      </method>
-    </pointcut>
-    <pointcut transactionStartPoint="true">
-      <nameTransaction/>
-      <className>com.boomi.process.graph.ProcessGraph</className>
-      <method>
-        <name>loadShape</name>
-        <parameters>
-          <type>java.lang.String</type>
-          <type>java.util.Map</type>
-          <type>java.util.Map</type>
-        </parameters>
-      </method>
-    </pointcut>
-    <pointcut transactionStartPoint="true">
-      <nameTransaction/>
-      <className>com.boomi.track.TrackDocument</className>
-      <method>
-        <name>setDateField</name>
-        <parameters>
-          <type>java.lang.String</type>
-          <type>long</type>
-        </parameters>
-      </method>
-    </pointcut>
-    <pointcut transactionStartPoint="true">
-      <nameTransaction/>
-      <className>com.boomi.track.TrackDocument</className>
-      <method>
-        <name>setEnumField</name>
-        <parameters>
-          <type>java.lang.String</type>
-          <type>java.lang.Enum</type>
         </parameters>
       </method>
     </pointcut>

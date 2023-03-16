@@ -10,11 +10,5 @@
         <parameters/>
       </method>
     </pointcut>
-    <pointcut transactionStartPoint="true">
-      <className>com.boomi.execution.ExecutionTask</className>
-      <method>
-       <name>call</name>
-      </method>
-    </pointcut>
   </instrumentation>
 </extension>
